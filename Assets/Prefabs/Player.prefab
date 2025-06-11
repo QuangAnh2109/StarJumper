@@ -211,7 +211,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   jumpForce: 7
-  maxJumpCount: 10
+  maxJumpCount: 2
   groundCheckPoint: {fileID: 854593850389942816}
   groundCheckSize1: {x: 0.55, y: 0.2}
   groundCheckSize2: {x: 0.55, y: 0.01}
