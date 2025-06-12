@@ -1,0 +1,9 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/GameUIStyle.uss?fileID=7433441132597879392&amp;guid=88d4cab61b56cd64e990e0c6bf38a87c&amp;type=3#GameUIStyle" />
+    <ui:VisualElement name="HealthBarBackground" class="GameUIStyle healthbar-size" style="flex-grow: 1; bottom: auto; position: absolute; height: 150px; background-image: url(&quot;project://database/Assets/Images/UI/HealthbarBackground.png?fileID=2800000&amp;guid=573e4b8ef5118fb4d8c5b55ed954c449&amp;type=3#HealthbarBackground&quot;); top: 0; left: 0; right: auto;">
+        <ui:VisualElement name="HealthBarMask" style="flex-grow: 1; position: absolute; width: 100%; height: 100%; overflow: hidden; visibility: visible; display: flex; transition-property: width; transition-duration: 0.5s; transition-timing-function: ease-out-bounce;">
+            <ui:VisualElement name="HealthBarFill" class="healthbar-size" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Images/UI/HealthBarFill.png?fileID=2800000&amp;guid=e53d7fb540461284c9394fcbd6c786c2&amp;type=3#HealthBarFill&quot;); position: absolute; height: 100%; width: 500px;" />
+        </ui:VisualElement>
+        <ui:Label text="Label" name="HealthLabel" style="position: absolute; width: 100%; height: 100%; -unity-text-align: middle-left; font-size: 28px; margin-right: 0; margin-bottom: 0; margin-top: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 50px;" />
+    </ui:VisualElement>
+</ui:UXML>

@@ -3,24 +3,29 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "EntityData", menuName = "ScriptableObjects/EntityData")]
 public abstract class EntityData : ScriptableObject
 {
-    [SerializeField]
-    private int score = 0;
+    public int Score { get;private set; }
+
+    protected virtual void OnEnable()
+    {
+        Score = 0;
+    }
 
     public void AddScore(int points)
     {
-        score += points;
+        Score += points;
     }
 
     public void SubtractScore(int points)
     {
-        score -= points;
-        if (score < 0)
+        Score -= points;
+        if (Score < 0)
         {
-            score = 0;
+            Score = 0;
         }
     }
-    public int GetScore()
+
+    public void ResetScore()
     {
-        return score;
+        Score = 0;
     }
 }

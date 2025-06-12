@@ -176,6 +176,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -610,7 +623,26 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      oga-swm-extra-tiles-alpha_0: -7981561883536473832
+      oga-swm-extra-tiles-alpha_1: 7911297188222226506
+      oga-swm-extra-tiles-alpha_10: -2892030044916340321
+      oga-swm-extra-tiles-alpha_11: 4357418425613022707
+      oga-swm-extra-tiles-alpha_12: 6760534525127239737
+      oga-swm-extra-tiles-alpha_13: -4659467363124552298
+      oga-swm-extra-tiles-alpha_14: -2475311449136308411
+      oga-swm-extra-tiles-alpha_15: -5681313363677019098
+      oga-swm-extra-tiles-alpha_16: 2340914414255981016
+      oga-swm-extra-tiles-alpha_17: 4042847161674671535
+      oga-swm-extra-tiles-alpha_18: -3848209491024187692
+      oga-swm-extra-tiles-alpha_2: -5528579873178246523
+      oga-swm-extra-tiles-alpha_3: 7250717592731043165
+      oga-swm-extra-tiles-alpha_4: 8068643115173984246
+      oga-swm-extra-tiles-alpha_5: 6417673090935489009
+      oga-swm-extra-tiles-alpha_6: 5054092072718055975
+      oga-swm-extra-tiles-alpha_7: -1409065897640219609
+      oga-swm-extra-tiles-alpha_8: 646083091732810162
+      oga-swm-extra-tiles-alpha_9: -1869283910633437163
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

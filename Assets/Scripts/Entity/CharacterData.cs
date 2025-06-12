@@ -5,37 +5,37 @@ public class CharacterData : EntityData
 {
     [SerializeField]
     private int maxHealth = 100;
-    private int currentHealth;
+    public int CurrentHealth { get; private set; }
 
     // Initialize current health to max health at the start
-    protected virtual void Awake()
+    protected override void OnEnable()
     {
-        currentHealth = maxHealth;
+        base.OnEnable();
+        CurrentHealth = maxHealth;
     }
-
 
     // Add health to the current health, ensuring it does not exceed max health
     public void AddHealth(int health)
     {
-        currentHealth += health;
-        if (currentHealth > maxHealth)
+        CurrentHealth += health;
+        if (CurrentHealth > maxHealth)
         {
-            currentHealth = maxHealth;
+            CurrentHealth = maxHealth;
         }
     }
 
     // Subtract health from the current health, ensuring it does not go below zero
     public void SubtractHealth(int health)
     {
-        currentHealth -= health;
-        if (currentHealth < 0)
+        CurrentHealth -= health;
+        if (CurrentHealth < 0)
         {
-            currentHealth = 0;
+            CurrentHealth = 0;
         }
     }
 
-    public int GetCurrentHealth()
+    public int GetMaxHealth()
     {
-        return currentHealth;
+        return maxHealth;
     }
 }
