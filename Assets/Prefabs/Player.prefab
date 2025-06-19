@@ -149,7 +149,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!61 &6755160936342291554
 BoxCollider2D:
@@ -216,7 +216,7 @@ MonoBehaviour:
   groundCheckSize1: {x: 0.55, y: 0.2}
   groundCheckSize2: {x: 0.55, y: 0.01}
   groundLayer:
-    serializedVersion: 2
+  - serializedVersion: 2
     m_Bits: 64
 --- !u!95 &1645309027556670843
 Animator:

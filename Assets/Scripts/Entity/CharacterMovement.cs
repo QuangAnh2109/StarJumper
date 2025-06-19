@@ -1,3 +1,5 @@
+using NUnit.Framework;
+using System.Collections.Generic;
 using UnityEngine;
 
 public abstract class CharacterMovement : EntityMovement
@@ -7,7 +9,7 @@ public abstract class CharacterMovement : EntityMovement
     [SerializeField] protected Transform groundCheckPoint;
     [SerializeField] protected Vector2 groundCheckSize1 = new Vector2(0.55f, 0.2f);
     [SerializeField] protected Vector2 groundCheckSize2 = new Vector2(0.55f, 0.01f);
-    [SerializeField] protected LayerMask groundLayer;
+    [SerializeField] protected List<LayerMask> groundLayer;
 
     protected CharacterAnimator characterAnimator;
     protected bool isGround;
@@ -95,7 +97,6 @@ public abstract class CharacterMovement : EntityMovement
         {
             if (JumpCheck())
             {
-
                 Rigidbody.linearVelocity = new Vector2(base.Rigidbody.linearVelocity.x, jumpForce);
                 jumpCount++;
             }
@@ -103,9 +104,22 @@ public abstract class CharacterMovement : EntityMovement
         }
     }
 
+    //protected virtual bool GroundCheck(Vector2 groundCheckSize)
+    //{
+    //    return Physics2D.OverlapBox(groundCheckPoint.position, groundCheckSize, 0f, groundLayer) != null;
+    //}
+
     protected virtual bool GroundCheck(Vector2 groundCheckSize)
     {
-        return Physics2D.OverlapBox(groundCheckPoint.position, groundCheckSize, 0f, groundLayer) != null;
+        foreach (LayerMask layer in groundLayer)
+        {
+            Collider2D collider = Physics2D.OverlapBox(groundCheckPoint.position, groundCheckSize, 0f, layer);
+            if (collider != null)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 
     protected virtual void ResetJumpCount()
