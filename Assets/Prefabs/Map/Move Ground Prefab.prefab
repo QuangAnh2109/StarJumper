@@ -12,7 +12,9 @@ GameObject:
   - component: {fileID: 8344289087209314572}
   - component: {fileID: 3086715312715028812}
   - component: {fileID: 2057872048603947741}
-  m_Layer: 0
+  - component: {fileID: 5644870127350723022}
+  - component: {fileID: 8188058754982907654}
+  m_Layer: 6
   m_Name: Move Ground Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -250,3 +252,46 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.7328796, y: 0.64680696}
   m_EdgeRadius: 0
+--- !u!114 &5644870127350723022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010489500660739041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83aa7d64dd597cd40bf34d808119b3bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 2
+  endPointLeft: {x: 78, y: -4}
+  endPointRight: {x: 87, y: -4}
+  loop: -1
+--- !u!50 &8188058754982907654
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010489500660739041}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
