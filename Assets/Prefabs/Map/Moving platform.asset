@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d5751a2c961df945a34295ccf5e576d, type: 3}
-  m_Name: Move Ground brush
+  m_Name: Moving platform
   m_EditorClassIdentifier: 
   m_Cells:
   - m_Tile: {fileID: 0}
@@ -42,4 +42,4 @@ MonoBehaviour:
   m_LastPickedCellSize: {x: 1, y: 1, z: 1}
   m_LastPickedCellGap: {x: 0, y: 0, z: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
-  m_Prefab: {fileID: 1010489500660739041, guid: 7a365761c18e43b418137fde1e76ac8a, type: 3}
+  m_Prefab: {fileID: 4330577668978091923, guid: a6a5864ecff012344a38e134782f8cc6, type: 3}
