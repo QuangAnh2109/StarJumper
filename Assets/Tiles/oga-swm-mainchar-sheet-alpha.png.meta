@@ -1,0 +1,1630 @@
+fileFormatVersion: 2
+guid: 314803b44bc9b5540a438dbf5fe8265b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6067139978066444507
+    second: oga-swm-mainchar-sheet-alpha_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 99
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 520
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52f37c4c5503dcba0800000000000000
+      internalID: -6067139978066444507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 520
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8930d2931ea77664d817e8ac73cfdd47
+      internalID: 1523836383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 520
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e34590173e403b4cb57918f121d3ba4
+      internalID: 121574135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 520
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79466f95a73204c45a698c207f8fcb42
+      internalID: 650153519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 520
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6e5c4136f7385547bb64e8f8c57429b
+      internalID: 1459604089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 494
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c64ca571056a5d4cafacbfc7e41e48d
+      internalID: -871900197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_6
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 494
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16a95b843e45b4643bcfa1887bf57a14
+      internalID: -1889890826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_7
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 494
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e91bfd80eb95fec41a870bb51f5c03d7
+      internalID: -1708104748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_8
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 494
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee05f1d8d39573641b1c6cd87739d7d7
+      internalID: 1373437681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 494
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9efc2447afb66be47a5e4b4e8e371283
+      internalID: -1552154340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 468
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac65c6dc80896d4f9d195ab188b17e9
+      internalID: -1712452830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_11
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 468
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9732e9fc34e13647b88fd8ff1d2f81e
+      internalID: 989948772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_12
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 468
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b66ca5725f583da41a3c4469fa473598
+      internalID: -1036472968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_13
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 468
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84695af43ebfa1c4a92b86a690136ec3
+      internalID: 1524874072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_14
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 468
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 814178aaa395c604d859171679cc4c27
+      internalID: -362212164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_15
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 468
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eb521ce75b3b5a46818f95ac93ec664
+      internalID: 807595908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_16
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 468
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc6c81649375d264ebc1d49d166f2a6c
+      internalID: 1704634167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_17
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 468
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81367f369da244449b3cb470892153f8
+      internalID: -1263614500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 442
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9833b95ee818a64fb74d1efeebba85a
+      internalID: -582289868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_19
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 442
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc2e15a627f86f644a8ec1e02af5840b
+      internalID: 976270568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_20
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 442
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97d4612e653dca8479d8bf694065f151
+      internalID: 1553223492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_21
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 442
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a097d7a407e5182409c7d8e3048bb22e
+      internalID: -390001838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_22
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 442
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40de39bed31c202429ae9b41b757a4f7
+      internalID: -465075776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_23
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 442
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bda268282f0ea68428004ad09341b4bc
+      internalID: 1550933430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_24
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 442
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ecffda0da0746a47b5180ec5be3b3ac
+      internalID: -1862750172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_25
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 442
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a714ee2d5f706304c87c168a2f00587c
+      internalID: 722236761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 416
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5a300b67aec84542ab4559815104a19
+      internalID: 219702354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_27
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 416
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7223faa0c4ace9418d1dd980d367e7f
+      internalID: 308238874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_28
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 416
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82e2cc9a705b6724d8ce56b129fc7a8c
+      internalID: -1487599388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_29
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 416
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e1cbaa8a88c2d5428acf0f3d7a64198
+      internalID: -1091600739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_30
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 416
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8a615e442d6aaf4eb22e3464d37c8df
+      internalID: 629564100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 390
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f99d0e5d381bf34ba42cd47fb3526a7
+      internalID: -476512925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_32
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 390
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bca5ed0667704f4299bffe20b6f9c75
+      internalID: -595116651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 364
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c44690a27ff045438ed23b25481d257
+      internalID: -1099010385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_34
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 364
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a9c34b6004f1ad4dabd252c1edf1028
+      internalID: 1636141293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 338
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3560bb839e124b44eaf28b808b90dced
+      internalID: -1769436688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_36
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 338
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c37dd9d028928584090aa1e49dfb3780
+      internalID: 960194999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_37
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 312
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6298ea9516623fa46a1806b329b348ad
+      internalID: -1623332813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_38
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 312
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf9986e6066fcc47a090b1aadbb34c5
+      internalID: 1189440994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 286
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 882ba00d2f836014380625b1ecacb5b4
+      internalID: 1946598099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_40
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 286
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b994127c334476a4595af22131c9a629
+      internalID: -294028730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 260
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d428bf2760871ec439e1fae442488df2
+      internalID: 758327252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_42
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 260
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54bb4df6a7b9d404192bbdfe9aa27711
+      internalID: -924133633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_43
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 234
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 397abd8654d65c34ea751b288dcf5117
+      internalID: 577910412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_44
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 234
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07df12bf02017ca4c89dff4dc6983bf3
+      internalID: -2014666688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 208
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3d9901a43013b54989b738ea17bc551
+      internalID: -1773348451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_46
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 208
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97aa379d9b949e342ab956896b35574f
+      internalID: -796577600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_47
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 182
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa377a87045e25f47b48223c34114c01
+      internalID: -1832458125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_48
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 182
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a4c3e628081b544b9d54c8dce69e403
+      internalID: 1428634160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 156
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9053751a1c808749a66450d24f04757
+      internalID: 1197748419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_50
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 156
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dbf30f2071043d45bde6dfc323987d3
+      internalID: -1234764840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_51
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 130
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6417f435be2ea934a8a48edafa6bd42c
+      internalID: -642754304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_52
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 130
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cdc7dcc9a916f54796ce329e4f02cd1
+      internalID: -1893859820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_53
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 104
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7917afde48d5e43429380e07b165e3b6
+      internalID: -2135025242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_54
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 104
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21cced9cf81709849bbabfb61b4cd628
+      internalID: 1688286857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 78
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e7f7e8da45db1c458d2c62f7124df04
+      internalID: 1690677873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_56
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 78
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f60dc1c2ce1672d42a37e3681781673c
+      internalID: -1151338788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_57
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 52
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f255877f872bff14badbc69367eb6104
+      internalID: 1413679634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_58
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 52
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 487863186bd53e440bb32a5d029a3224
+      internalID: 628561026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_59
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 26
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d140db9c6ae8c9241a547d172dd22f7e
+      internalID: -1962910056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_60
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 26
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66e5f2420af82354c9ca9b4c8858acde
+      internalID: 2041497386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_61
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9a1ed1485bc6c943bc61d389b80ce49
+      internalID: 709148351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_62
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 0
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 414f0bb2aa51e7544b5df49fcf79eae6
+      internalID: 1934846470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_63
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a96d438e8a7bb34c8c4f12c897256a0
+      internalID: 878394749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oga-swm-mainchar-sheet-alpha_64
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 0
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 232202455d97bad4aa38e547b9f52da5
+      internalID: -610538562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 6f3c7d0ef1082da4381a3cb56c91161f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":36.0,"y":26.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      oga-swm-mainchar-sheet-alpha_0: -6067139978066444507
+      oga-swm-mainchar-sheet-alpha_1: 1523836383
+      oga-swm-mainchar-sheet-alpha_10: -1712452830
+      oga-swm-mainchar-sheet-alpha_11: 989948772
+      oga-swm-mainchar-sheet-alpha_12: -1036472968
+      oga-swm-mainchar-sheet-alpha_13: 1524874072
+      oga-swm-mainchar-sheet-alpha_14: -362212164
+      oga-swm-mainchar-sheet-alpha_15: 807595908
+      oga-swm-mainchar-sheet-alpha_16: 1704634167
+      oga-swm-mainchar-sheet-alpha_17: -1263614500
+      oga-swm-mainchar-sheet-alpha_18: -582289868
+      oga-swm-mainchar-sheet-alpha_19: 976270568
+      oga-swm-mainchar-sheet-alpha_2: 121574135
+      oga-swm-mainchar-sheet-alpha_20: 1553223492
+      oga-swm-mainchar-sheet-alpha_21: -390001838
+      oga-swm-mainchar-sheet-alpha_22: -465075776
+      oga-swm-mainchar-sheet-alpha_23: 1550933430
+      oga-swm-mainchar-sheet-alpha_24: -1862750172
+      oga-swm-mainchar-sheet-alpha_25: 722236761
+      oga-swm-mainchar-sheet-alpha_26: 219702354
+      oga-swm-mainchar-sheet-alpha_27: 308238874
+      oga-swm-mainchar-sheet-alpha_28: -1487599388
+      oga-swm-mainchar-sheet-alpha_29: -1091600739
+      oga-swm-mainchar-sheet-alpha_3: 650153519
+      oga-swm-mainchar-sheet-alpha_30: 629564100
+      oga-swm-mainchar-sheet-alpha_31: -476512925
+      oga-swm-mainchar-sheet-alpha_32: -595116651
+      oga-swm-mainchar-sheet-alpha_33: -1099010385
+      oga-swm-mainchar-sheet-alpha_34: 1636141293
+      oga-swm-mainchar-sheet-alpha_35: -1769436688
+      oga-swm-mainchar-sheet-alpha_36: 960194999
+      oga-swm-mainchar-sheet-alpha_37: -1623332813
+      oga-swm-mainchar-sheet-alpha_38: 1189440994
+      oga-swm-mainchar-sheet-alpha_39: 1946598099
+      oga-swm-mainchar-sheet-alpha_4: 1459604089
+      oga-swm-mainchar-sheet-alpha_40: -294028730
+      oga-swm-mainchar-sheet-alpha_41: 758327252
+      oga-swm-mainchar-sheet-alpha_42: -924133633
+      oga-swm-mainchar-sheet-alpha_43: 577910412
+      oga-swm-mainchar-sheet-alpha_44: -2014666688
+      oga-swm-mainchar-sheet-alpha_45: -1773348451
+      oga-swm-mainchar-sheet-alpha_46: -796577600
+      oga-swm-mainchar-sheet-alpha_47: -1832458125
+      oga-swm-mainchar-sheet-alpha_48: 1428634160
+      oga-swm-mainchar-sheet-alpha_49: 1197748419
+      oga-swm-mainchar-sheet-alpha_5: -871900197
+      oga-swm-mainchar-sheet-alpha_50: -1234764840
+      oga-swm-mainchar-sheet-alpha_51: -642754304
+      oga-swm-mainchar-sheet-alpha_52: -1893859820
+      oga-swm-mainchar-sheet-alpha_53: -2135025242
+      oga-swm-mainchar-sheet-alpha_54: 1688286857
+      oga-swm-mainchar-sheet-alpha_55: 1690677873
+      oga-swm-mainchar-sheet-alpha_56: -1151338788
+      oga-swm-mainchar-sheet-alpha_57: 1413679634
+      oga-swm-mainchar-sheet-alpha_58: 628561026
+      oga-swm-mainchar-sheet-alpha_59: -1962910056
+      oga-swm-mainchar-sheet-alpha_6: -1889890826
+      oga-swm-mainchar-sheet-alpha_60: 2041497386
+      oga-swm-mainchar-sheet-alpha_61: 709148351
+      oga-swm-mainchar-sheet-alpha_62: 1934846470
+      oga-swm-mainchar-sheet-alpha_63: 878394749
+      oga-swm-mainchar-sheet-alpha_64: -610538562
+      oga-swm-mainchar-sheet-alpha_7: -1708104748
+      oga-swm-mainchar-sheet-alpha_8: 1373437681
+      oga-swm-mainchar-sheet-alpha_9: -1552154340
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
