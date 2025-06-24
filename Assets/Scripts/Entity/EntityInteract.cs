@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public abstract class EntityCollision : MonoBehaviour
+public abstract class EntityInteract : MonoBehaviour
 {
     [SerializeField] protected EntityData entityData;
 }
