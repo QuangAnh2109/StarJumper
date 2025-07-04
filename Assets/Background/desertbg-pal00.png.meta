@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      desertbg-pal00_0: -76284202075043357
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

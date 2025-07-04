@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      swm-tiles-bg-mountains-sweetie-16_0: -4495798424437538576
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

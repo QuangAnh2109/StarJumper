@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      blobbybg4cbase_0: -7099329157463784098
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
