@@ -1,10 +1,9 @@
-using UnityEngine;
-
-public class GroundMovement : EntityMovement
+﻿using UnityEngine;
+public class GroundAIInputProvider : BaseInputProvider
 {
+
     [SerializeField] protected Vector2 endPointLeft;
     [SerializeField] protected Vector2 endPointRight;
-    [SerializeField] protected int loop = -1;
 
     protected Vector2 currentPoint;
     protected Vector2 currentTarget;
@@ -12,8 +11,8 @@ public class GroundMovement : EntityMovement
 
     void OnDrawGizmosSelected()
     {
-        Vector2 endPointLeftDraw = new(endPointLeft.x - 0.5f, endPointLeft.y + 0.5f);
-        Vector2 endPointRightDra = new(endPointRight.x - 0.5f, endPointRight.y + 0.5f);
+        Vector2 endPointLeftDraw = new(endPointLeft.x, endPointLeft.y);
+        Vector2 endPointRightDra = new(endPointRight.x, endPointRight.y);
 
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(endPointLeftDraw, 0.2f);
@@ -31,13 +30,13 @@ public class GroundMovement : EntityMovement
         currentTarget = endPointRight;
     }
 
-    protected override void Move()
+    public override void UpdateInput()
     {
         if (Vector2.Distance(endPointLeft, endPointRight) <= 0) return;
 
         if (Vector2.Distance(transform.position, currentTarget) <= 0)
         {
-            if(movingForward)
+            if (movingForward)
             {
                 currentTarget = endPointLeft;
                 movingForward = false;
@@ -49,8 +48,7 @@ public class GroundMovement : EntityMovement
             }
         }
 
-        Vector2 newPosition = Vector2.MoveTowards(transform.position, currentTarget, moveSpeed * Time.fixedDeltaTime);
-        Rigidbody.MovePosition(newPosition);
+        MoveInput = currentTarget;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

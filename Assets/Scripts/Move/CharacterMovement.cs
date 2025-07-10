@@ -1,8 +1,7 @@
-using NUnit.Framework;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class CharacterMovement : EntityMovement
+public class CharacterMovement : EntityMovement
 {
     [SerializeField] protected float jumpForce = 7f;
     [SerializeField] protected int maxJumpCount = 1;
@@ -18,6 +17,7 @@ public abstract class CharacterMovement : EntityMovement
     protected float moveInputHorizontal;
     protected bool isJumping;
     protected bool isRunning;
+    protected SpriteRenderer spriteRenderer;
 
     protected virtual void OnDrawGizmosSelected()
     {
@@ -30,6 +30,7 @@ public abstract class CharacterMovement : EntityMovement
     {
         base.Awake();
         characterAnimator = GetComponent<CharacterAnimator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         if (characterAnimator == null)
         {
             Debug.LogError("EntityAnimator component is missing on " + gameObject.name);
@@ -72,7 +73,15 @@ public abstract class CharacterMovement : EntityMovement
         }
     }
 
-    protected abstract void GetInput();
+    private void GetInput()
+    {
+        inputProvider.UpdateInput();
+        moveInputHorizontal = inputProvider.MoveInput.x;
+        if (!isJumping)
+        {
+            isJumping = inputProvider.JumpInput;
+        }
+    }
 
     protected override void Move()
     {
@@ -82,13 +91,12 @@ public abstract class CharacterMovement : EntityMovement
         Jump();
     }
 
-
-
     protected virtual void MovementHorizontal()
     {
         Rigidbody.linearVelocity = new Vector2(moveInputHorizontal * moveSpeed, Rigidbody.linearVelocity.y);
         isRunning = moveInputHorizontal != 0;
-        if (isRunning) transform.localScale = new Vector3(Mathf.Sign(moveInputHorizontal), transform.localScale.y, transform.localScale.z);
+        if (moveInputHorizontal > 0) GetComponent<SpriteRenderer>().flipX = false;
+        else if (moveInputHorizontal < 0) GetComponent<SpriteRenderer>().flipX = true;
     }
 
     protected virtual void Jump()
@@ -97,17 +105,12 @@ public abstract class CharacterMovement : EntityMovement
         {
             if (JumpCheck())
             {
-                Rigidbody.linearVelocity = new Vector2(base.Rigidbody.linearVelocity.x, jumpForce);
+                Rigidbody.linearVelocity = new Vector2(Rigidbody.linearVelocity.x, jumpForce);
                 jumpCount++;
             }
             isJumping = false;
         }
     }
-
-    //protected virtual bool GroundCheck(Vector2 groundCheckSize)
-    //{
-    //    return Physics2D.OverlapBox(groundCheckPoint.position, groundCheckSize, 0f, groundLayer) != null;
-    //}
 
     protected virtual bool GroundCheck(Vector2 groundCheckSize)
     {

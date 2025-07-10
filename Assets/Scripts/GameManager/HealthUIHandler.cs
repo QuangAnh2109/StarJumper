@@ -1,18 +1,17 @@
+using System;
 using UnityEngine;
-using UnityEngine.Rendering;
 using UnityEngine.UIElements;
 
+[RequireComponent(typeof(PlayerHealthSystem))]
 public class HealthUIHandler : MonoBehaviour
 {
-    [SerializeField] private CharacterData characterData;
     [SerializeField] private UIDocument uiDocument;
 
     private VisualElement healthBarMask;
     private Label healthLabel;
-    private int currentHealth;
+    private PlayerHealthSystem healthSystem;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Awake()
+    private void Awake()
     {
         if (uiDocument != null)
         {
@@ -24,32 +23,26 @@ public class HealthUIHandler : MonoBehaviour
 
     private void Start()
     {
-        if (characterData != null)
-        {
-            UpdateHealthUI();
-        }
+        healthSystem = GetComponent<PlayerHealthSystem>();
+        UpdateHealthUI();
+        healthSystem.OnHealthChanged += UpdateHealthUI;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void UpdateHealthUI()
     {
-        if(characterData != null && currentHealth != characterData.CurrentHealth)
-        {
-            UpdateHealthUI();
-        }
-    }
+        Debug.Log($"Current Health: {healthSystem.CurrentHealth}, Max Health: {healthSystem.GetMaxHealth()}");
+        int currentHealth = healthSystem.CurrentHealth;
+        int maxHealth = healthSystem.GetMaxHealth();
 
-    public void UpdateHealthUI()
-    {
-        currentHealth = characterData.CurrentHealth;
         if (healthBarMask != null)
         {
-            float healthPercent = Mathf.Lerp(8f, 88f, currentHealth / characterData.GetMaxHealth());
-            healthBarMask.style.width = Length.Percent(healthPercent);
+            float percent = Mathf.Clamp01((float)currentHealth / maxHealth);
+            healthBarMask.style.width = Length.Percent(percent * 100f);
         }
+
         if (healthLabel != null)
         {
-            healthLabel.text = $"{currentHealth}/{characterData.GetMaxHealth()}";
+            healthLabel.text = $"{currentHealth}/{maxHealth}";
         }
     }
 }
