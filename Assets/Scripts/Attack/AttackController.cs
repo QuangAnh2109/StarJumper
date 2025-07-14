@@ -6,7 +6,7 @@ public class AttackController : MonoBehaviour
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform firePoint;
     [SerializeField] private float fireRate = 0.5f;
-    [SerializeField] private string shootAnimationTrigger = "Shoot";
+    [SerializeField] private string shootAnimationTrigger = "Attack";
     [SerializeField] private Color gizmoColor = Color.red;
     [SerializeField] private float gizmoArrowLength = 0.5f;
 
