@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletDestroyController : MonoBehaviour
+public class BulletDestroyController : BaseDestroyController
 {
     [SerializeField] private List<string> safeTags;
 
@@ -9,7 +9,7 @@ public class BulletDestroyController : MonoBehaviour
     {
         if(!safeTags.Contains(other.gameObject.tag))
         {
-            Destroy(gameObject);
+            Destroy(gameObject, destroyDelay);
         }
     }
 }

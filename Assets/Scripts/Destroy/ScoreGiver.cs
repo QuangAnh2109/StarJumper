@@ -1,14 +1,14 @@
 ﻿using UnityEngine;
 
-[RequireComponent(typeof(HealthSystem))]
+[RequireComponent(typeof(BaseDestroyController))]
 public class ScoreGiver : MonoBehaviour
 {
     [SerializeField] private int scoreOnDeath = 0;
 
     private void Start()
     {
-        HealthSystem health = GetComponent<HealthSystem>();
-        health.OnDeath += GiveScore;
+        BaseDestroyController destroyController = GetComponent<BaseDestroyController>();
+        destroyController.DestroyAction += GiveScore;
     }
 
     private void GiveScore()

@@ -1,13 +1,12 @@
 using UnityEngine;
 
 [RequireComponent(typeof(HealthSystem))]
-public class DestroyController : MonoBehaviour
+public class DestroyController : BaseDestroyController
 {
-    [SerializeField] protected float destroyDelay = 0f;
     private void Start()
     {
         HealthSystem health = GetComponent<HealthSystem>();
-        health.OnDeath += SafeDestroy;
+        health.DeathAction += SafeDestroy;
     }
 
     private void SafeDestroy()

@@ -7,7 +7,7 @@ public class HealthSystem : MonoBehaviour
     [HideInInspector] public int CurrentHealth { get; protected set; }
     [HideInInspector] protected bool IsDead => CurrentHealth <= 0;
 
-    [HideInInspector] public event Action OnDeath;
+    [HideInInspector] public event Action DeathAction;
 
     private void Awake()
     {
@@ -24,6 +24,6 @@ public class HealthSystem : MonoBehaviour
 
     private void Death()
     {
-        OnDeath?.Invoke();
+        DeathAction?.Invoke();
     }
 }
