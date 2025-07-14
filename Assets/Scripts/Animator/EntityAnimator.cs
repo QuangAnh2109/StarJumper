@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Animator))]
 public abstract class EntityAnimator : MonoBehaviour
 {
     protected Animator animator;
@@ -7,10 +8,6 @@ public abstract class EntityAnimator : MonoBehaviour
     protected virtual void Awake()
     {
         animator = GetComponent<Animator>();
-        if (animator == null)
-        {
-            Debug.LogError("Animator component is missing on " + gameObject.name);
-        }
     }
 
     protected virtual void Update()

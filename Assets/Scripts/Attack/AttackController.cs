@@ -3,7 +3,6 @@
 [RequireComponent(typeof(BaseInputProvider))]
 public class AttackController : MonoBehaviour
 {
-    [SerializeField] public bool canAttack = false;
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform firePoint;
     [SerializeField] private float fireRate = 0.5f;
@@ -42,8 +41,7 @@ public class AttackController : MonoBehaviour
 
     void Update()
     {
-        inputProvider.UpdateInput();
-        if (inputProvider.AttackInput && canAttack && Time.time >= nextFireTime)
+        if (inputProvider.AttackInput && Time.time >= nextFireTime)
         {
             Shoot();
             nextFireTime = Time.time + fireRate;

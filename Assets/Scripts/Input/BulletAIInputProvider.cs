@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 public class BulletAIInputProvider : BaseInputProvider
 {
-    public override void UpdateInput()
+    protected override void UpdateInput()
     {
         MoveInput = transform.right;
     }

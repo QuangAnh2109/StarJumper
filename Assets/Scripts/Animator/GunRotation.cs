@@ -1,30 +1,20 @@
 ﻿using UnityEngine;
 
+[RequireComponent(typeof(BaseInputProvider))]
 public class GunRotation : MonoBehaviour
 {
-    private Camera mainCamera;
     private SpriteRenderer gunSprite;
+    private BaseInputProvider inputProvider;
 
     void Awake()
     {
         gunSprite = GetComponent<SpriteRenderer>();
-        mainCamera = Camera.main;
+        inputProvider = GetComponent<BaseInputProvider>();
     }
 
     void Update()
     {
-        if (mainCamera == null)
-        {
-            return;
-        }
-
-        Vector3 mouseScreenPosition = Input.mousePosition;
-
-        mouseScreenPosition.z = transform.position.z - mainCamera.transform.position.z;
-
-        Vector3 mouseWorldPosition = mainCamera.ScreenToWorldPoint(mouseScreenPosition);
-
-        Vector3 lookDirection = mouseWorldPosition - transform.position;
+        Vector3 lookDirection = inputProvider.MousePosition - transform.position;
 
         float angle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg;
 

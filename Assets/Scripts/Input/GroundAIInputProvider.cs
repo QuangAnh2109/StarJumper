@@ -30,7 +30,7 @@ public class GroundAIInputProvider : BaseInputProvider
         currentTarget = endPointRight;
     }
 
-    public override void UpdateInput()
+    protected override void UpdateInput()
     {
         if (Vector2.Distance(endPointLeft, endPointRight) <= 0) return;
 

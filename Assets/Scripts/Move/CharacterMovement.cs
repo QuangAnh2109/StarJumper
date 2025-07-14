@@ -75,7 +75,6 @@ public class CharacterMovement : EntityMovement
 
     private void GetInput()
     {
-        inputProvider.UpdateInput();
         moveInputHorizontal = inputProvider.MoveInput.x;
         if (!isJumping)
         {
