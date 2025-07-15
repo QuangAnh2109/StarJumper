@@ -50,24 +50,4 @@ public class GroundAIInputProvider : BaseInputProvider
 
         MoveInput = currentTarget;
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        Debug.Log("GroundMovement: OnCollisionEnter2D called with " + collision.gameObject.name);
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            Debug.Log("GroundMovement: Player collided, setting parent to " + transform.name);
-            collision.transform.parent = transform;
-        }
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        Debug.Log("GroundMovement: OnCollisionExit2D called with " + collision.gameObject.name);
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            Debug.Log("GroundMovement: Player exited collision, removing parent from " + collision.gameObject.name);
-            collision.transform.parent = null;
-        }
-    }
 }

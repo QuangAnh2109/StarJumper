@@ -44,7 +44,7 @@ public class GoblinInputProvider : BaseInputProvider
     {
         // Reset các giá trị input ở đầu mỗi frame
         MoveInput = Vector2.zero;
-        AttackInput = false;
+        AttackInput1 = false;
 
         if (player == null)
         {
@@ -120,7 +120,7 @@ public class GoblinInputProvider : BaseInputProvider
     {
         // Logic tấn công: dừng di chuyển và đặt AttackInput thành true
         MoveInput = Vector2.zero;
-        AttackInput = true;
+        AttackInput1 = true;
 
         // Kích hoạt animation (nếu có)
         if (anim != null) anim.SetTrigger("Attack");

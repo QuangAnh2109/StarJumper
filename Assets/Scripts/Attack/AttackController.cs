@@ -41,7 +41,7 @@ public class AttackController : MonoBehaviour
 
     void Update()
     {
-        if (inputProvider.AttackInput && Time.time >= nextFireTime)
+        if (inputProvider.AttackInput1 && Time.time >= nextFireTime)
         {
             Shoot();
             nextFireTime = Time.time + fireRate;

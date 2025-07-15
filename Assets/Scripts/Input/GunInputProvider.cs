@@ -12,7 +12,7 @@ internal class GunInputProvider : BaseInputProvider
 
     protected override void UpdateInput()
     {
-        AttackInput = Input.GetMouseButton(0);
+        AttackInput1 = Input.GetMouseButton(0);
 
         if (mainCamera != null)
         {

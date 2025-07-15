@@ -10,7 +10,7 @@ public class CharacterMovement : EntityMovement
     [SerializeField] protected Vector2 groundCheckSize2 = new Vector2(0.55f, 0.01f);
     [SerializeField] protected List<LayerMask> groundLayer;
 
-    protected CharacterAnimator characterAnimator;
+    protected Animator animator;
     protected bool isGround;
     protected bool wasGrounded;
     protected int jumpCount;
@@ -18,6 +18,7 @@ public class CharacterMovement : EntityMovement
     protected bool isJumping;
     protected bool isRunning;
     protected SpriteRenderer spriteRenderer;
+    protected GroundMovement currentPlatform;
 
     protected virtual void OnDrawGizmosSelected()
     {
@@ -29,12 +30,8 @@ public class CharacterMovement : EntityMovement
     protected override void Awake()
     {
         base.Awake();
-        characterAnimator = GetComponent<CharacterAnimator>();
+        animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        if (characterAnimator == null)
-        {
-            Debug.LogError("EntityAnimator component is missing on " + gameObject.name);
-        }
     }
 
     protected virtual void Start()
@@ -49,7 +46,7 @@ public class CharacterMovement : EntityMovement
     protected virtual void Update()
     {
         GetInput();
-        if (characterAnimator != null)
+        if (animator != null)
         {
             UpdateAnimator();
         }
@@ -57,19 +54,19 @@ public class CharacterMovement : EntityMovement
 
     protected virtual void UpdateAnimator()
     {
-        characterAnimator.isGrounded = GroundCheck(groundCheckSize2);
-        characterAnimator.isRunning = isRunning;
-        if (!characterAnimator.isGrounded)
+        animator.SetBool("isGrounded", GroundCheck(groundCheckSize2));
+        animator.SetBool("isRunning", isRunning);
+        if (!animator.GetBool("isGrounded"))
         {
             if (Rigidbody.linearVelocity.y > 0.1f)
             {
-                characterAnimator.isJumping = true;
+                animator.SetBool("isJumping", true);
             }
-            else characterAnimator.isJumping = false;
+            else animator.SetBool("isJumping", false);
         }
         else
         {
-            characterAnimator.isJumping = isJumping;
+            animator.SetBool("isJumping", isJumping);
         }
     }
 
@@ -93,6 +90,14 @@ public class CharacterMovement : EntityMovement
     protected virtual void MovementHorizontal()
     {
         Rigidbody.linearVelocity = new Vector2(moveInputHorizontal * moveSpeed, Rigidbody.linearVelocity.y);
+        if (currentPlatform != null)
+        {
+            Rigidbody.linearVelocity += new Vector2(currentPlatform.currentVelocity.x, 0);
+            if(currentPlatform.currentVelocity.y <= 0)
+            {
+                Rigidbody.linearVelocity += new Vector2(0, currentPlatform.currentVelocity.y);
+            }
+        }
         isRunning = moveInputHorizontal != 0;
         if (moveInputHorizontal > 0) GetComponent<SpriteRenderer>().flipX = false;
         else if (moveInputHorizontal < 0) GetComponent<SpriteRenderer>().flipX = true;
@@ -133,9 +138,25 @@ public class CharacterMovement : EntityMovement
         wasGrounded = isGround;
     }
 
-    // Checks if the player can jump based on ground state and jump count
     protected virtual bool JumpCheck()
     {
         return (isGround || (jumpCount < maxJumpCount && jumpCount != 0));
+    }
+
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        var platform = collider.GetComponent<GroundMovement>();
+        if (platform != null)
+        {
+            currentPlatform = platform;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collider)
+    {
+        if (collider.GetComponent<GroundMovement>() == currentPlatform)
+        {
+            currentPlatform = null;
+        }
     }
 }
