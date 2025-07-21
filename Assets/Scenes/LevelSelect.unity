@@ -119,6 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &30166057 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5591952248110455572, guid: 0ba0426ee7ea1f8449469d037f226d9b, type: 3}
+  m_PrefabInstance: {fileID: 218793846}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &194489408
 GameObject:
   m_ObjectHideFlags: 0
@@ -256,12 +261,24 @@ PrefabInstance:
       value: MediumLevel
       objectReference: {fileID: 0}
     - target: {fileID: 6210919622869795172, guid: 0ba0426ee7ea1f8449469d037f226d9b, type: 3}
+      propertyPath: m_Transition
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6210919622869795172, guid: 0ba0426ee7ea1f8449469d037f226d9b, type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6210919622869795172, guid: 0ba0426ee7ea1f8449469d037f226d9b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 194489408}
+      objectReference: {fileID: 194489409}
     - target: {fileID: 6210919622869795172, guid: 0ba0426ee7ea1f8449469d037f226d9b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: byIndex
+      objectReference: {fileID: 0}
+    - target: {fileID: 6210919622869795172, guid: 0ba0426ee7ea1f8449469d037f226d9b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7421319763429513270, guid: 0ba0426ee7ea1f8449469d037f226d9b, type: 3}
       propertyPath: m_Text
@@ -270,7 +287,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5591952248110455572, guid: 0ba0426ee7ea1f8449469d037f226d9b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1010854275}
   m_SourcePrefab: {fileID: 100100000, guid: 0ba0426ee7ea1f8449469d037f226d9b, type: 3}
 --- !u!1 &391167466
 GameObject:
@@ -549,6 +569,28 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3802520045965291226, guid: 0ba0426ee7ea1f8449469d037f226d9b, type: 3}
   m_PrefabInstance: {fileID: 218793846}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1010854275
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30166057}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 654160e1d9ffa584d8a1f00b70a2f6f5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1222888272
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -762,10 +804,14 @@ PrefabInstance:
     - target: {fileID: 6210919622869795172, guid: 0ba0426ee7ea1f8449469d037f226d9b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 194489408}
+      objectReference: {fileID: 194489409}
     - target: {fileID: 6210919622869795172, guid: 0ba0426ee7ea1f8449469d037f226d9b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: byIndex
+      objectReference: {fileID: 0}
+    - target: {fileID: 6210919622869795172, guid: 0ba0426ee7ea1f8449469d037f226d9b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7421319763429513270, guid: 0ba0426ee7ea1f8449469d037f226d9b, type: 3}
       propertyPath: m_Text

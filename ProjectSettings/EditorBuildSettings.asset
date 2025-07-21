@@ -7,7 +7,7 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    guid: 8f0f36ef6045b6c4a903a699f17d969f
   - enabled: 1
     path: Assets/Scenes/LevelSelect.unity
     guid: 5c5073f47ecbc02478e907a0a68035f6
@@ -23,6 +23,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Map1.unity
     guid: f91d6c8a7a53ff447bb65974bfdb739b
+  - enabled: 1
+    path: Assets/Scenes/Map2.unity
+    guid: 63d443bb244326342a6b5ff3e59d725c
+  - enabled: 1
+    path: Assets/Scenes/Map3.unity
+    guid: a403934a86cf9174282285039cff0704
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
