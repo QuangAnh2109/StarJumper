@@ -13,6 +13,7 @@ public class AttackController : MonoBehaviour
     private float nextFireTime = 0f;
     private BaseInputProvider inputProvider;
     private Animator animator;
+    private int fireDelay = 1;
 
     void OnDrawGizmos()
     {
@@ -44,7 +45,7 @@ public class AttackController : MonoBehaviour
         if (inputProvider.AttackInput1 && Time.time >= nextFireTime)
         {
             Shoot();
-            nextFireTime = Time.time + fireRate;
+            nextFireTime = Time.time + fireDelay / fireRate;
         }
     }
 
@@ -56,11 +57,11 @@ public class AttackController : MonoBehaviour
             return;
         }
 
+        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+
         if (animator != null)
         {
             animator.SetTrigger(shootAnimationTrigger);
         }
-
-        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
     }
 }

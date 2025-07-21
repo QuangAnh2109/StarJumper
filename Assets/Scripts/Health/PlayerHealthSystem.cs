@@ -13,7 +13,6 @@ public class PlayerHealthSystem : HealthSystem, IDamageable
         {
             CurrentHealth = 0;
         }
-        Debug.Log($"{gameObject.name} took {amount} damage. Current health: {CurrentHealth}");
         OnHealthChanged?.Invoke();
     }
 

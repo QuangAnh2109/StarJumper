@@ -180,6 +180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5e500e0b4662b34ca3fa3886f542fd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canUpdateInput: 1
 --- !u!114 &3406029334562547037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -205,7 +206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5456cf56f961c1c46b515560cfd06f0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 30
+  damage: 50
   enemyTags:
   - Enemy
 --- !u!114 &8052105334882369604
@@ -233,6 +234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35c01b2099cc2994ba1df7a68c0a2b8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyDelay: 0
   safeTags:
   - Player
 --- !u!114 &4318113988500361682

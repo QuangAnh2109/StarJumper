@@ -1,8 +1,12 @@
+using NUnit.Framework;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance {get; set;}
+
+    public List<string> Level;
 
     private void Awake()
     {
@@ -15,5 +19,6 @@ public class GameManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
         }
+        Level = new List<string>();
     }
 }

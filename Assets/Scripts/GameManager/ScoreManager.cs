@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
 
 public class ScoreManager : MonoBehaviour
 {
@@ -6,21 +7,15 @@ public class ScoreManager : MonoBehaviour
 
     public int CurrentScore { get; private set; } = 0;
 
-    private void Awake()
-    {
-        if (Instance != null && Instance != this)
-        {
-            Destroy(gameObject);
-            return;
-        }
-
-        Instance = this;
-        DontDestroyOnLoad(gameObject);
-    }
+    public TextMeshProUGUI scoreText;
 
     public void AddScore(int amount)
     {
         CurrentScore += amount;
-        Debug.Log("Score: " + CurrentScore);
+        if(scoreText != null)
+        {
+            scoreText.text = "Score: " + CurrentScore;
+        }
+        else Debug.Log("Score: " + CurrentScore);
     }
 }

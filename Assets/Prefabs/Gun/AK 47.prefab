@@ -215,7 +215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 6228005073978010572, guid: ffa5a8faf386af44d9d4fbfad12c5a94, type: 3}
   firePoint: {fileID: 5896879821905796526}
-  fireRate: 0.4
+  fireRate: 2
   shootAnimationTrigger: Attack
   gizmoColor: {r: 1, g: 0, b: 0, a: 1}
   gizmoArrowLength: 0.1

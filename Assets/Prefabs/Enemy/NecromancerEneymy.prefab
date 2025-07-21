@@ -103,7 +103,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5116753000464067355}
   - component: {fileID: 5300374070365460062}
-  - component: {fileID: 4456715702636625922}
   - component: {fileID: 2021075647687674286}
   - component: {fileID: 1893922571126692880}
   - component: {fileID: 4181383283333214118}
@@ -153,6 +152,9 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -175,7 +177,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 3333845
-  m_SortingLayer: 4
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -364752000, guid: 536ba0e412fa9e142ba675884d9d299a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -188,42 +190,9 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4456715702636625922
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3944992633240421640}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b5931d490157ad439a0ef82fa769708, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  entityData: {fileID: 11400000, guid: 675b518bd1bee484bbe1bd7cb4541520, type: 2}
-  checkLedge: {fileID: 7835236158614660075}
-  checkWall: {fileID: 7264658561129082290}
-  playerDetected: {fileID: 3365111915808967660}
-  closeRangePlayerDetected: {fileID: 2967233819902075026}
-  longRangePlayerDetected: {fileID: 2967233819902075026}
-  particlePoint: {fileID: 336966785403334256}
-  particleBlood: {fileID: 3936960180415998917, guid: 2c19ddcb1e878e649a324b887f6222fd, type: 3}
-  friction: {fileID: 6200000, guid: b73d7e990eaf49549a727a883a534a36, type: 2}
-  isParticleRandomRotation: 1
-  idleData: {fileID: 11400000, guid: 9b2eb5305764d684184827c2bf64e9ec, type: 2}
-  moveData: {fileID: 11400000, guid: 06c130d91eee8f5419c12913ce00182a, type: 2}
-  detectedData: {fileID: 11400000, guid: 69ba8b6a06bf1694e983636597c511b7, type: 2}
-  chargeData: {fileID: 11400000, guid: f665acf1d1b0dc3478de7d531d4f11b6, type: 2}
-  attackData: {fileID: 11400000, guid: afa86cfcb449229439dbf0db5ea1f033, type: 2}
-  hurtData: {fileID: 11400000, guid: bdeac4c275d1fbf44aaa6ce32c609203, type: 2}
-  lookForPlayerData: {fileID: 11400000, guid: d2725b9622f87a446b6f9203f2d04ccf, type: 2}
-  deadData: {fileID: 11400000, guid: 6d8d82fa698fcab4b882287c567cf759, type: 2}
-  spawnData: {fileID: 11400000, guid: 2442659a48de9ec44b0c763bd429e9bc, type: 2}
-  attackPoint: {fileID: 871004171694555597}
-  spawnPoint: {fileID: 4568681572405804957}
 --- !u!95 &2021075647687674286
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -237,6 +206,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -250,6 +220,7 @@ BoxCollider2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3944992633240421640}
   m_Enabled: 1
+  serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -273,7 +244,8 @@ BoxCollider2D:
     m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
   m_Offset: {x: 0.037415504, y: 0.1615994}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,12 +256,11 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
   m_Size: {x: 1.0027237, y: 2.3054695}
   m_EdgeRadius: 0
 --- !u!50 &4181383283333214118
 Rigidbody2D:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -300,8 +271,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
   m_GravityScale: 3
   m_Material: {fileID: 0}
   m_IncludeLayers:
