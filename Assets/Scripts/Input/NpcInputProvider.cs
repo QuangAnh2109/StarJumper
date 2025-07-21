@@ -15,31 +15,31 @@ public class NpcInputProvider : BaseInputProvider
 
     private int moveDirection = 1;
 
-    //protected override void UpdateInput()
-    //{
-    //    Collider2D target = Physics2D.OverlapCircle(transform.position, attackRange, targetLayer);
-
-    //    if (target != null)
-    //    {
-    //        HandleAttackState(target);
-    //    }
-    //    else
-    //    {
-    //        HandlePatrolState();
-    //    }
-    //}
-
-    private void HandleAttackState(Collider2D target)
+    protected override void UpdateInput()
     {
-        MoveInput = Vector2.zero;
-        AttackInput1 = true;
+        Collider2D target = Physics2D.OverlapCircle(transform.position, attackRange, targetLayer);
 
-        float directionToTarget = target.transform.position.x - transform.position.x;
-        moveDirection = (int)Mathf.Sign(directionToTarget);
-
-        float angle = (moveDirection == 1) ? 0 : 180;
-        attackPoint.rotation = Quaternion.Euler(attackPoint.rotation.eulerAngles.x, angle, attackPoint.rotation.eulerAngles.z);
+        if (target != null)
+        {
+            HandleAttackState(target);
+        }
+        else
+        {
+            HandlePatrolState();
+        }
     }
+
+    //private void HandleAttackState(Collider2D target)
+    //{
+    //    MoveInput = Vector2.zero;
+    //    AttackInput1 = true;
+
+    //    float directionToTarget = target.transform.position.x - transform.position.x;
+    //    moveDirection = (int)Mathf.Sign(directionToTarget);
+
+    //    float angle = (moveDirection == 1) ? 0 : 180;
+    //    attackPoint.rotation = Quaternion.Euler(attackPoint.rotation.eulerAngles.x, angle, attackPoint.rotation.eulerAngles.z);
+    //}
 
     private void HandlePatrolState()
     {
