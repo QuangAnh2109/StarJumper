@@ -1,48 +1,58 @@
-using System;
+﻿using System;
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(PlayerHealthSystem))]
 public class HealthUIHandler : MonoBehaviour
 {
-    [SerializeField] private UIDocument uiDocument;
+    [SerializeField] private Image healthFillImage;
+    [SerializeField] private Text healthText;
 
-    private VisualElement healthBarMask;
-    private Label healthLabel;
     private PlayerHealthSystem healthSystem;
-
-    private void Awake()
-    {
-        if (uiDocument != null)
-        {
-            VisualElement root = uiDocument.rootVisualElement;
-            healthBarMask = root.Q<VisualElement>("HealthBarMask");
-            healthLabel = root.Q<Label>("HealthLabel");
-        }
-    }
 
     private void Start()
     {
         healthSystem = GetComponent<PlayerHealthSystem>();
+
+        if (healthSystem == null)
+        {
+            Debug.LogError("Không tìm thấy PlayerHealthSystem trên GameObject này!");
+            enabled = false;
+            return;
+        }
+
+        // Cập nhật UI lần đầu
         UpdateHealthUI();
+
+        // Đăng ký sự kiện thay đổi máu
         healthSystem.OnHealthChanged += UpdateHealthUI;
+    }
+
+    private void OnDestroy()
+    {
+        // Hủy đăng ký sự kiện để tránh lỗi khi object bị hủy
+        if (healthSystem != null)
+        {
+            healthSystem.OnHealthChanged -= UpdateHealthUI;
+        }
     }
 
     private void UpdateHealthUI()
     {
-        Debug.Log($"Current Health: {healthSystem.CurrentHealth}, Max Health: {healthSystem.GetMaxHealth()}");
         int currentHealth = healthSystem.CurrentHealth;
         int maxHealth = healthSystem.GetMaxHealth();
+        float percent = Mathf.Clamp01((float)currentHealth / maxHealth);
 
-        if (healthBarMask != null)
+        Debug.Log($"UpdateHealthUI called - Health: {currentHealth}/{maxHealth} ({percent * 100}%)");
+
+        if (healthFillImage != null)
         {
-            float percent = Mathf.Clamp01((float)currentHealth / maxHealth);
-            healthBarMask.style.width = Length.Percent(percent * 100f);
+            healthFillImage.fillAmount = percent;
         }
 
-        if (healthLabel != null)
+        if (healthText != null)
         {
-            healthLabel.text = $"{currentHealth}/{maxHealth}";
+            healthText.text = $"{currentHealth}/{maxHealth}";
         }
     }
 }
