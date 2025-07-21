@@ -29,17 +29,17 @@ public class NpcInputProvider : BaseInputProvider
         }
     }
 
-    //private void HandleAttackState(Collider2D target)
-    //{
-    //    MoveInput = Vector2.zero;
-    //    AttackInput1 = true;
+    private void HandleAttackState(Collider2D target)
+    {
+        MoveInput = Vector2.zero;
+        AttackInput1 = true;
 
-    //    float directionToTarget = target.transform.position.x - transform.position.x;
-    //    moveDirection = (int)Mathf.Sign(directionToTarget);
+        float directionToTarget = target.transform.position.x - transform.position.x;
+        moveDirection = (int)Mathf.Sign(directionToTarget);
 
-    //    float angle = (moveDirection == 1) ? 0 : 180;
-    //    attackPoint.rotation = Quaternion.Euler(attackPoint.rotation.eulerAngles.x, angle, attackPoint.rotation.eulerAngles.z);
-    //}
+        float angle = (moveDirection == 1) ? 0 : 180;
+        attackPoint.rotation = Quaternion.Euler(attackPoint.rotation.eulerAngles.x, angle, attackPoint.rotation.eulerAngles.z);
+    }
 
     private void HandlePatrolState()
     {
