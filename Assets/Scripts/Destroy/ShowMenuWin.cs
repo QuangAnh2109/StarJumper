@@ -1,9 +1,11 @@
+using UnityEditor;
 using UnityEngine;
 
 [RequireComponent(typeof(BaseDestroyController))]
-public class SaveScene : MonoBehaviour
+public class ShowMenuFinish : MonoBehaviour
 {
     [SerializeField] private string sceneLevel = "0";
+    [SerializeField] private GameObject Menu;
 
     private void Start()
     {
@@ -14,7 +16,6 @@ public class SaveScene : MonoBehaviour
     private void SaveLevel()
     {
         GameManager.Instance?.Level.Add(sceneLevel);
-        Time.timeScale = 0;
-        Debug.Log($"Level {sceneLevel} saved to GameManager's Level list.");
+        Menu.SetActive(true);
     }
 }

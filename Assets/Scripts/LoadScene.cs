@@ -7,8 +7,6 @@ public class LoadScene : MonoBehaviour
     // General method to load scenes based on build index
     public void byIndex(int sceneIndex)
     {
-
-        Console.WriteLine($"Loading scene with index: {sceneIndex}");
         SceneManager.LoadScene(sceneIndex);
     }
 
