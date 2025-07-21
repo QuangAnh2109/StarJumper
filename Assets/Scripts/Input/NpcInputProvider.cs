@@ -15,19 +15,19 @@ public class NpcInputProvider : BaseInputProvider
 
     private int moveDirection = 1;
 
-    protected override void UpdateInput()
-    {
-        Collider2D target = Physics2D.OverlapCircle(transform.position, attackRange, targetLayer);
+    //protected override void UpdateInput()
+    //{
+    //    Collider2D target = Physics2D.OverlapCircle(transform.position, attackRange, targetLayer);
 
-        if (target != null)
-        {
-            HandleAttackState(target);
-        }
-        else
-        {
-            HandlePatrolState();
-        }
-    }
+    //    if (target != null)
+    //    {
+    //        HandleAttackState(target);
+    //    }
+    //    else
+    //    {
+    //        HandlePatrolState();
+    //    }
+    //}
 
     private void HandleAttackState(Collider2D target)
     {
